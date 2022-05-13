@@ -28,11 +28,6 @@ app.get(/.+\.png$/i, (req, res) => {
   res.sendFile(path.join(__dirname, "../assets/snek.png"));
 });
 
-// :)
-app.get(/.+\.secret$/i, (req, res) => {
-  res.sendFile(path.join(__dirname, "../assets/snek.png"));
-});
-
 // Base path
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../assets/html/index.html"));
