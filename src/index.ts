@@ -32,3 +32,8 @@ app.get(/.+\.png$/i, (req, res) => {
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../assets/html/index.html"));
 });
+
+// Catchall
+app.get(/.+/i, (req, res) => {
+  res.sendFile(path.join(__dirname, "../assets/snek.png"));
+});
